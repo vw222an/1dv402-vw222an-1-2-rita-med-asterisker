@@ -13,13 +13,16 @@ namespace _1_2_rita_med_asterisker
             int colorSwitch = 0;
 
 
-            for (int col = 0; col < 39; col++)
+            for (int row = 0; row < 25; row++)
             {
                 Console.WriteLine();
 
-                for (int row = 0; row < 25; row++)
+
+                for (int col = 0; col < 39; col++)
                 {
-                    switch (colorSwitch = col % 3)
+                    Console.Write("* ");
+
+                    switch (colorSwitch = row % 3)
                     {
                         case 0:
                             Console.ForegroundColor = ConsoleColor.Yellow;
@@ -30,11 +33,10 @@ namespace _1_2_rita_med_asterisker
                         case 2:
                             Console.ForegroundColor = ConsoleColor.Green;
                             break;
-
                     }
 
-                    Console.Write("* ");
-                    if (row == 0)
+                    
+                    if (row % 2 == 0)
                     {
                         Console.Write(" ");
                     }
