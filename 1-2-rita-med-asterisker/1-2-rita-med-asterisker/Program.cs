@@ -17,10 +17,14 @@ namespace _1_2_rita_med_asterisker
             {
                 Console.WriteLine();
 
+                if (row % 2 == 1)
+                {
+                    Console.Write(" ");
+                }
 
                 for (int col = 0; col < 39; col++)
                 {
-                    Console.Write("* ");
+                    
 
                     switch (colorSwitch = row % 3)
                     {
@@ -35,11 +39,9 @@ namespace _1_2_rita_med_asterisker
                             break;
                     }
 
-                    
-
+                    Console.Write("* ");
                 }
             }
-            Console.WriteLine();
         }
     }
 }
