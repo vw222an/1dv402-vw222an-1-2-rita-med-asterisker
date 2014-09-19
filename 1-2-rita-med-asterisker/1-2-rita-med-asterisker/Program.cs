@@ -36,12 +36,10 @@ namespace _1_2_rita_med_asterisker
                     }
 
                     
-                    if (row % 2 == 0)
-                    {
-                        Console.Write(" ");
-                    }
+
                 }
             }
+            Console.WriteLine();
         }
     }
 }
